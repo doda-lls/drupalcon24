@@ -1,0 +1,11 @@
+{% set list_slides %}
+{% for item in items %}
+    <div{{ item.attributes.addClass('field__item', 'swiper-slide') }}>{{ item.content }}</div>
+{% endfor %}
+{% endset %}
+
+{% embed('drupalcon:slider') %}
+    {% block slides %}
+        {{ list_slides }}
+    {% endblock %}
+{% endembed %}
