@@ -596,8 +596,8 @@ video {
   display: none;
 }
 
-.p-20 {
-  padding: 5rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .font-playfair-display {
@@ -608,6 +608,9 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-/* .swiper {
-    @apply text-red-900 py-10;
-} */
+.swiper {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(254 226 226 / var(--tw-text-opacity));
+}

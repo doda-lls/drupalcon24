@@ -1,7 +1,7 @@
 {% set list_slides %}
-{% for item in items %}
-    <div{{ item.attributes.addClass('field__item', 'swiper-slide') }}>{{ item.content }}</div>
-{% endfor %}
+    {% for item in items %}
+        <div{{ item.attributes.addClass('field__item', 'swiper-slide') }}>{{ item.content }}</div>
+    {% endfor %}
 {% endset %}
 
 <!-- Replaces the block slides in slider.twig -->
